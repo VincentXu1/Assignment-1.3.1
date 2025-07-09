@@ -38,7 +38,7 @@
                     Console.WriteLine(AreaTriangle(dimensions.length, dimensions.width));
                     break;
                 case "b":
-                    Console.WriteLine(AreaSquare(dimensions.length, dimensions.width));
+                    Console.WriteLine(AreaSquare(dimensions.length));
                     break;
                 case "c":
                     Console.WriteLine(AreaRectangle(dimensions.length, dimensions.width));
@@ -54,9 +54,9 @@
             Console.WriteLine("\tc) rectangle");
         }
 
-        static double AreaSquare(double sideA, double sideB)
+        static double AreaSquare(double side)
         {
-            return AreaRectangle(sideA, sideB);
+            return AreaRectangle(side, side);
         }
 
         static double AreaRectangle(double length, double width)
