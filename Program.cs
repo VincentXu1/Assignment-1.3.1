@@ -9,6 +9,7 @@
             string userInput = Console.ReadLine();
             bool loop = true;
 
+            // User menu selection input validation.
             while (loop)
             {
                 switch(userInput)
