@@ -5,14 +5,13 @@
         static void Main(string[] args)
         {
             UserPrompt();
-
             string userInput = Console.ReadLine();
             bool loop = true;
 
             // User menu selection input validation.
             while (loop)
             {
-                switch(userInput)
+                switch (userInput)
                 {
                     case "a":
                     case "b":
@@ -27,13 +26,13 @@
                         break;
                 }
             }
-            
+
             // User input error handling intentionally omitted. Just wanted to try tuples.
             Console.WriteLine("Please enter figure dimensions:");
             (double length, double width) dimensions = (Convert.ToDouble(Console.ReadLine()), Convert.ToDouble(Console.ReadLine()));
 
             Console.WriteLine("Area is: ");
-            switch(userInput)
+            switch (userInput)
             {
                 case "a":
                     Console.WriteLine(AreaTriangle(dimensions.length, dimensions.width));
